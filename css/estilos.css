@@ -1,0 +1,71 @@
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css";
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(data:image/jpeg;base64,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);
+}
+
+.login-box{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    color: white;
+    margin-top: 32px;
+    width: 50%;
+    background-color: black;
+    padding: 60px;
+    border-radius: 12px;
+
+}
+
+.login-box h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid #f6f6f6;
+    margin-bottom: 50px;
+    padding: 13px 0;
+}
+
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+
+}
+
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+
+}
+
+.btn{
+    width: 100%;
+    background: none;
+    border: 2px solid #f6f6f6;
+    color: white;
+    padding: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+
+
+}

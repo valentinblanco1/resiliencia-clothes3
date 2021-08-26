@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* poniendo esto evitas que el padding haga una sumatoria a un width o a un height */
+
   }
   html,
   body {
@@ -51,7 +52,7 @@
     height: 24px;
   }
   .banner {
-    background-image: url("../imagenes/FotoJet.jpg");
+    background-image: url("../imagenes/fondopantalla.jpg");
     background-size: cover; /* esto es para definir un tamano del banner y encaje en mi width y height */
     background-position: center; /* con esto centras el banner. */
     width: 100%;
@@ -117,8 +118,6 @@
   
   .diferentes-productos {
     background-color:white;
-    color: #191919;
-    text-decoration: none;
     margin-top: 12px; 
     padding-left: 12px;
     padding-right: 12px;
@@ -128,7 +127,13 @@
     padding-top: 12px;
     padding-bottom: 12px;
     justify-content: space-between;
+  }
+  .diferentes-productos a {
+    text-decoration: none;
+    color: #191919;
     font-family: Arial, Helvetica, sans-serif; 
+    padding-left: 12px;
+    padding-right: 12px;
   }
   
   .footer {
