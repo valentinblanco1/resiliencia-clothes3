@@ -155,4 +155,18 @@
     display: flex;
     flex-wrap: wrap;
   }
-  
+  .resolucion{
+    width: 99%;
+  }
+  /**me tira error, comando para resoluciones de celulares a tabeles
+  @media(max-width:767px)
+  {
+  }
+/**
+  @media(min-width 768px)
+{
+  }
+  @media(min-width:991px)
+  {
+  }
+  /
