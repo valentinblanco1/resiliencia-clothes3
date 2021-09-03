@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.contenedor1{
+    width: 95%;
+    max-width: 1000px;
+    margin: auto;
+}
+.contenedor1 {
+    background: #030303;
+    margin-bottom: 10px; ;
+}
