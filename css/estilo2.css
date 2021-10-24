@@ -1,0 +1,143 @@
+.banner {
+    background-image: url("../imagenes/fondopantalla.jpg");
+    background-size: cover; /* esto es para definir un tamano del banner y encaje en mi width y height */
+    background-position: center; /* con esto centras el banner. */
+    width: 100%;
+    height: 340px;
+    margin-top: 32px; /* esto agrega un margen en la parte superior con una distancia de 32px */
+    border-radius: 12px;
+  }
+  .bienvenida {
+    margin-top: 32px;
+    width: 50%;
+    background-color: white;
+    padding: 32px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+  
+  }
+  .bienvenida h1 {
+    color: #191919;
+    font-size: 42px; /* Esto define el tamano de la fuente de texto */
+    font-weight: 100;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+  
+  
+  
+  .contenedordeproductos {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedordeproductos .productos {
+    display: flex; /* Esto lo convierte en FILA a los contenedores que esten dentro*/
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  .contenedordeproductos .producto {
+    width: 19%; /* cada producto va a medir un 19% del tamano del contenedor */
+    height: 420px; /* la altura de cada producto */
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden; /* Esto lo que hace es mantener todo el contenido dentro de producto y que no se salga. */
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+  }
+  .contenedordeproductos .producto h1 {
+    font-size: 16px;
+    margin-top: 12px;
+    font-weight: 500;
+    color: #191919;
+  }
+  .contenedordeproductos .producto h1.precio {
+    color: green;
+    font-size: 24px;
+  }
+  .contenedordeproductos .producto button {
+    background-color: black;
+    color: white;
+    border: none; /* esto hace que le quita el borde que trae por defecto */
+    border-radius: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 12px;
+    cursor: pointer;
+  }
+  
+  .diferentes-productos {
+    background-color:white;
+    margin-top: 12px; 
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 9px;
+    align-items: center;
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    justify-content: space-between;
+  }
+  .diferentes-productos a {
+    text-decoration: none;
+    color: #191919;
+    font-family: Arial, Helvetica, sans-serif; 
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+  
+  .footer p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+  }
+  
+  .sociales {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  
+  .sociales li {
+    margin: 0 10px;
+  }
+  
+  .sociales a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .sociales a img {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+  }
+  
+  .sociales a:hover img {
+    color:aqua;
+  }
+  
+  .footer-bottom {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
