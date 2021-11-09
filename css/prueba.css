@@ -23,7 +23,10 @@
         }
         #div3img1 { grid-area: 2 / 2 / 5 / 5; 
             background-color: #113CFC;
+            position: relative;
         padding: 5px;
+        width: auto;
+        height: auto;
         }
         #div4horarios { grid-area: 2 / 5/ 3 / 6; 
             background-color: #3F3351;
@@ -38,12 +41,30 @@
         margin: 5px;
         padding: 3px;
         }
-        .atras {
+        .botones{
+font-size: 30px;
+line-height: 70px;
+position: absolute;
+box-shadow: 0 0 10px rgba(255, 255, .6);
+text-align: center;
+font-weight: bold;
+
+
+
+
+        }
+        .botones:hover{
+cursor:pointer;
+transform:scale(1.2,1.2);
+
+
+        }
+ .atras {
 
 left: 2%;
 top:  calc(50% - 70px);
         }
-        .adelante{
+.adelante{
 right: 2%;
 top: calc(50% - 70px);
 
