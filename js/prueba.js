@@ -1,20 +1,46 @@
+const slider = document.querySelector("#slider");
+let sliderSection = document.querySelectorAll(".slider__section");
+let sliderSectionLas = sliderSection[sliderSection.length -1];
+const btnLeft = document.querySelector("#btn-left");
+const btnRight = document.querySelector("#btn-right");
 
-var imagenes =['imagenes/serpiente.png','imagenes/logo.png']
-cont=0;
-function pasar (div3img1){
-    div3img1.addEventlistener('click',e=>){
-        let atras =pasar.querySelector('.atras'),
-    adelante = pasar.querySelector('.adelante'),
-    imagenes = pasar.querySelector('imagenes')
-    tgt= e.target;
- }
-if(tgt== atras){
-    if(cont >0 ){
-    imagenes.src = imagenes[ cont - 1];
+slider.insertAdjacentElement('afterbegin',sliderSectionLas);
 
+function Next(){
+let sliderSectionFirst =document.querySelectorAll(".slider__section")[0];
+slider.style.marginLeft ="-200%";
+slider.style.transition ="all 0.5s";
+setTimeout(function(){
+    slider.style.transition = "none";
+    slider.insertAdjacentElement('beforeend',sliderSectionFirst);
+    slider.style.marginLeft = "-100%";
+},500);
 }
+function Prev(){
+    let sliderSection = document.querySelectorAll(".slider__section");
+    let sliderSectionLast = sliderSection[sliderSection.length -1];
+    slider.style.marginLeft ="0";
+    slider.style.transition ="all 0.5s";
+    setTimeout(function(){
+        slider.style.transition = "none";
+        slider.insertAdjacentElement('afterbegin',sliderSectionLast);
+        slider.style.marginLeft = "-100%";
+    }, 500);
 }
 
+btnRight.addEventListener('click', function(){
+    Next();
+});
 
-}
+btnLeft.addEventListener('click', function(){
+    Prev();
+});
+
+setInterval(function(){
+Next();
+
+},5000);
+
+
+
 
