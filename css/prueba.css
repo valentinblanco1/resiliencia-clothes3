@@ -7,7 +7,12 @@
     grid-row-gap: 0px;
     }
     
-    .div1 { grid-area: 2 / 1 / 5 / 2; }
+    .div1 { grid-area: 2 / 1 / 5 / 2;
+    margin: auto;
+    text-align: center;
+    
+    
+    }
     .div2 { grid-area: 2 / 5 / 3 / 6; }
     .div3 { grid-area: 3 / 5 / 5 / 6; }
     
@@ -19,14 +24,17 @@
    .container-slider{
 
 width: 100%;
-max-width: 700px; /* tamaño maximo que va tomar la imagen  */
-margin: 0 auto  ; 
+max-width: 50%; /* tamaño maximo que va tomar la imagen  */
+margin: auto  ; 
 overflow: hidden; /*para que no se vean las imagenes de atras */
 box-shadow:0 0 0 1px #000000e5,  /*sombras y marco de las imagenes */
            0 15px 50px;
            position: relative; /*botones de los costados */
-           
+           top: 20vh ; 
+   
+
    }
+
    .slider{
 display: flex;
 width: 400%; /* mientras más imagenes lo unico que cambiamos es el ancho ej: si hay 5 son 500% etc.*/
