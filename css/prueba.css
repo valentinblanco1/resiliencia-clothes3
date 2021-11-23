@@ -6,15 +6,15 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
+   
     
     .div1 { grid-area: 2 / 1 / 5 / 2;
- margin-top: 100px;
- border: 100px;
-    height: 100px;
-    width: 100px;
-    float: left;
+height: 200px; /*altura */
+width: 300px;  /* ancho*/
+margin: auto;
     }
     .div2 { grid-area: 2 / 5 / 3 / 6;
+    margin: auto;
       
 
  
@@ -22,23 +22,26 @@
    
    
    }
-    .div3 { grid-area: 3 / 5 / 5 / 6; }
-    
+    .div3 { grid-area: 3 / 5 / 5 / 6; 
+   margin: auto;
+   
+   }
+      
 
   
    
    
    
    .container-slider{
+      
 width: 100%;
-max-width: 50%; /* tamaño maximo que va tomar la imagen  */
-margin: auto  ; 
+max-width: 700px; /* tamaño maximo que va tomar la imagen  */
+margin: 0 auto;
 overflow: hidden; /*para que no se vean las imagenes de atras */
 box-shadow:0 0 0 1px #000000e5,  /*sombras y marco de las imagenes */
            0 15px 50px;
            position: relative; /*botones de los costados */
-           top: 20vh ; 
-           top: 7vh ; 
+           
  
      
    }
