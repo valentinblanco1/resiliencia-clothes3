@@ -8,12 +8,20 @@
     }
     
     .div1 { grid-area: 2 / 1 / 5 / 2;
-    margin: auto;
-    text-align: center;
-    
-    
+ margin-top: 100px;
+ border: 100px;
+    height: 100px;
+    width: 100px;
+    float: left;
     }
-    .div2 { grid-area: 2 / 5 / 3 / 6; }
+    .div2 { grid-area: 2 / 5 / 3 / 6;
+      
+
+ 
+   
+   
+   
+   }
     .div3 { grid-area: 3 / 5 / 5 / 6; }
     
 
@@ -22,7 +30,6 @@
    
    
    .container-slider{
-
 width: 100%;
 max-width: 50%; /* tamaño maximo que va tomar la imagen  */
 margin: auto  ; 
@@ -31,8 +38,9 @@ box-shadow:0 0 0 1px #000000e5,  /*sombras y marco de las imagenes */
            0 15px 50px;
            position: relative; /*botones de los costados */
            top: 20vh ; 
-   
-
+           top: 7vh ; 
+ 
+     
    }
 
    .slider{
