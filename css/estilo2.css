@@ -1,10 +1,11 @@
+
 .banner {
     background-image: url("../imagenes/fondopantalla.jpg");
     background-size: cover; /* esto es para definir un tamano del banner y encaje en mi width y height */
     background-position: center; /* con esto centras el banner. */
     width: 100%;
     height: 340px;
-    margin-top: 32px; /* esto agrega un margen en la parte superior con una distancia de 32px */
+    margin-top: 32px;  /*esto agrega un margen en la parte superior con una distancia de 32px */
     border-radius: 12px;
   }
   .bienvenida {
@@ -16,14 +17,15 @@
     border-radius: 12px;
   
   }
+  /*
   .bienvenida h1 {
     color: #191919;
-    font-size: 42px; /* Esto define el tamano de la fuente de texto */
-    font-weight: 100;
+    font-size: 42px; /* Esto define el tamano de la fuente de texto 
+    font-weight: 100;/*
     margin-bottom: 32px;
     width: 100%;
   }
-  
+  */
   
   
   .contenedordeproductos {

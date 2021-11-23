@@ -48,9 +48,9 @@ header {
   color: #fff;
 }
 
-.logo {
+.logo {  /*cambia las cosas del logo del menu*/ 
   font-size: 20px;
-  color:#fff;
+  color:rgb(173, 11, 11);
   font-weight: 100;
 }
 
@@ -60,11 +60,11 @@ header {
 
 .menu li {
   list-style: none;
-  margin: 10px;
+  margin: 10px ; /* 62,5%*/
 }
 
 .menu li a {
-  color: #fff;
+  color: rgb(12, 6, 6);
   text-decoration: none;
   font-weight: bold;
   transition: all 0.5s ease;
@@ -72,8 +72,8 @@ header {
 
 .menu li a:hover {
   padding: 5px 10px;
-  background: #fff;
-  color: rgb(255, 251, 251);
+  background: rgb(21, 9, 37);
+  color: rgb(255, 255, 255);
   border-radius: 15px;
 }
 

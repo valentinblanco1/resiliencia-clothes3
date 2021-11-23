@@ -1,0 +1,70 @@
+/*Pop Up de aca para abajo son los codigos del css */
+label{ 
+    text-align: center
+}
+.modal{
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);  
+position: absolute;
+top: 0;
+left: 0;
+
+display: flex;
+
+animation: modal 2s 3s forwards;
+
+visibility: hidden;
+opacity: 0;
+
+}
+.contenido {
+    text-align: center;
+margin: auto;
+width: 50%;
+height: 50%;
+
+border-radius: 10px;
+
+
+}
+
+#cerrar {
+display: none;
+}
+
+
+#cerrar + label {
+position: fixed;
+color: rgb(255, 255, 255); /*color de la X */
+font-size: 25px;
+z-index: 50;
+background: rgb(97, 6, 6);
+height: 40px;
+width: 40px;
+line-height: 40px;
+border-radius: 50%;
+right: 10%;
+
+cursor: pointer;
+
+animation: modal 2s 3s forwards;
+visibility: hidden;
+opacity: 0;
+
+}
+
+#cerrar:checked + label , #cerrar:checked ~ .modal{
+display:none;
+}
+    
+@keyframes modal {
+ 100%  {
+visibility: visible;
+opacity: 1;
+}
+}
+/*aca finaliza */ 
+
+
+    

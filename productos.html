@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RESILIENCIA CLOTHES</title>
-    <link rel="stylesheet" href="css/estilo2.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/menu.css">
     <meta name="viewport" content="width-device-width, user-scalable-no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   </head>
   <body>
     <div class="contenedor">
       <div class="cabecera">
-        <div class="logo"></div>
-        <div class="menu">
-          <a href="index.html">Inicio</a>
-          <a href="productos.html">Productos</a>
-          <a href="menu.html">Menu</a>
-          <a href="login.html">Login</a>
-          <a href="#"
-          ><svg
+        <nav class="nav">
+          <div class="logo">RESILIENCIA CLOTHES</div>
+        <ul class="menu">
+          <li><a href="prueba1.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="carritodecompras.html">
+          <svg
             class="icono"
             fill="none"
             stroke="currentColor"
@@ -30,22 +32,21 @@
               stroke-linejoin="round"
               stroke-width="2"
               d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-            ></path></svg
-        ></a>
+            ></path>--</svg></a>
+          </li>
+        </ul>
+        </nav>
+
         </div>
       </div>
-      <div class="diferentes-productos">
-        <a href="productos.html">Remeras</a>
-        <a href="buzos.html">Buzos</a>
-        <a href="buzos2.html">Buzos Cuello Redondo</a>
-      </div>
+     
       <div class="contenedordeproductos">
         <div class="productos">
           <div class="producto">
             <img
               src="https://essential.vteximg.com.br/arquivos/ids/454358-454-423/302-0467_1.jpg"
             />
-            <h1>REMERA JORDAN M J JMC SS GFX CREW</h1>
+            <h1>REMERA JORDAN M J</h1>
             <h1 class="precio">$3.000</h1>
             <button>COMPRAR</button>
           </div>
@@ -77,7 +78,7 @@
             <img
               src="https://essential.vteximg.com.br/arquivos/ids/440384-454-423/302-0214_1.jpg?v=637605677591500000"
             />
-            <h1>REMERA JORDAN PARIS SAINT-GERMAIN LOGO</h1>
+            <h1>REMERA JORDAN PARISGERMAIN LOGO</h1>
             <h1 class="precio">$5.299</h1>
             <button>COMPRAR</button>
           </div>
@@ -210,14 +211,22 @@
         </div>
       </div>
     </div>
+    <input type="checkbox" id="cerrar" value="">
+    <label for="cerrar" id="btn-cerrar"> x </label>
+    <div class="modal">
+      <div class="contenido">
+       <h2>RESILIENCIA CLOTHES</h2>  
+        <img src="imagenes/logo.png" alt="">     
+        <! –– contenido de pop up -->
+      </div>             
+     </div>
     <footer>
       <div class="footer">
         <h3>Contactanos</h3>
         <p>Mas informacion en nuestras Redes Sociales</p>
         <ul class="sociales">
           <li><a href="https://www.instagram.com/resilienciaclothesaj">
-             <img src="imagenes/bxl-instagram.svg" class="footer_icon" alt="Instagram"
-          </a></li>
+             <img src="imagenes/bxl-instagram.svg" class="footer_icon" alt="Instagram"></a></li>
           <li><a href="https://wa.me/542995228348?text=Hola,%20que%20tal?%20Que%20tienen%20en%20stock%20disponible?"> <img src="imagenes/whastapp.svg" class="footer_icon" alt="Whastapp">
           </a></li>
           <li><a href="https://www.google.com.ar/maps/place/Lan%C3%ADn+2020,+Q8300+Neuqu%C3%A9n/@-38.96484,-68.0899726,17z/data=!3m1!4b1!4m5!3m4!1s0x960a325336fcf337:0x19390a348718006c!8m2!3d-38.96484!4d-68.0877839"><img src="imagenes/maps.svg" class="footer_icon" alt="Maps">
