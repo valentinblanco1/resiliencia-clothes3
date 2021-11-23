@@ -82,6 +82,7 @@ left: 10px;
 .slider__btn--right{
 right:10px ;
 }
+/*Pop Up de aca para abajo son los codigos del css */
 label{ 
     text-align: center
 }
@@ -145,8 +146,8 @@ display:none;
 visibility: visible;
 opacity: 1;
 }
-
 }
+/*aca finaliza */ 
 
 
     
