@@ -103,7 +103,7 @@ header {
 
 }
 .bienvenida h1 {
-  color: #000000;
+  color: #800707;
   font-size: 42px; /* Esto define el tamano de la fuente de texto */
   font-weight: 100;
   margin-bottom: 32px;
@@ -180,6 +180,7 @@ header {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  
 }
 
 .footer h3 {
@@ -194,6 +195,7 @@ header {
   margin: 10px auto;
   line-height: 28px;
   font-size: 14px;
+  
 }
 
 .sociales {
