@@ -1,63 +1,84 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* poniendo esto evitas que el padding haga una sumatoria a un width o a un height */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-html,
+
 body {
-  
-  display: flex;
-  flex-direction: column; /* Esto es para decirle al FLEX que se ponga en modo columna y no en fila */
-  min-height: 100vh; /* Esto es para decirle al html,body que se ponga un minimo de altura del 100% de mi monitor */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
+<<<<<<< Updated upstream
   width: 100%;
   height: 100vh;
   background-color: rgba(20, 20, 14, 0.8); /* */
   background-size: cover;
   background-position: center;
+=======
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+>>>>>>> Stashed changes
 }
 
-.nav {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 25px;
-  transition: all 0.5s ease;
+.menu {
+    background-color: #1a1717c2;
+    color: #fff;
+    height: 70px;
+    
 }
 
-.nav.active {
-  background: #191919;
-  padding: 15px;
-
+.menu__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
 }
 
-.nav.active .logo,
-.nav.active a {
-  color: #000;
+.menu__links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+    
 }
 
-.nav.active a:hover {
-  background: #000;
-  color: #fff;
+.menu__item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
 }
 
+<<<<<<< Updated upstream
 .logo {  /*cambia las cosas del logo del menu*/ 
   font-size: 20px;
   color:rgb(173, 11, 11);
   font-weight: 100;
+=======
+.menu__item:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(0);    
+>>>>>>> Stashed changes
 }
 
-.menu {
-  display: flex;
+.menu__link{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
 }
 
+<<<<<<< Updated upstream
 .menu li {
   list-style: none;
   margin: 10px ; /* 62,5%*/
@@ -75,32 +96,123 @@ header {
   background: rgb(21, 9, 37);
   color: rgb(255, 255, 255);
   border-radius: 15px;
+=======
+.menu__link:hover{
+    background-color: #5e7094;
+}
+
+.menu__arrow{
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 3px;
+}
+
+.menu__nesting{
+    list-style: none;
+    transition: clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: #000;
+>>>>>>> Stashed changes
+}
+
+.menu__link--inside{
+    padding: 30px 100px 30px 20px;
+
+}
+
+.menu__link--inside:hover{
+    background-color: #798499;
+}
+
+.menu__hamburguer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__img{
+    display: block;
+    width: 36px;
+
 }
 
 
+@media (max-width:800px){
+    .menu__hamburguer{
+        display: flex;
+    }
 
+    .menu__item{
+        --clip:0;
+        overflow: hidden;
 
+    }
 
+    .menu__item--active{
+        --transform: rotate(0);
+        --background: #5e7094;
+    }
 
+    .menu__item--show{
+        background-color: var(--background);
+    }
 
+    .menu__links{
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translateX(100%);
+    }
 
-.banner {
-  background-image: url("../imagenes/fondopantalla.jpg");
-  background-size: cover; /* esto es para definir un tamano del banner y encaje en mi width y height */
-  background-position: center; /* con esto centras el banner. */
-  width: 100%;
-  height: 340px;
-  margin-top: 32px; /* esto agrega un margen en la parte superior con una distancia de 32px */
-  border-radius: 12px;
+    .menu__links--show{
+        transform: unset;
+        width: 100%;
+    }
+
+    .menu__link{
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+
+    .menu__arrow{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .menu__nesting{
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+    }
+
+    .menu__link--inside{
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid #798499;
+    }
 }
-.bienvenida {
-  margin-top: 32px;
-  width: 50%;
-  background-color: white;
-  padding: 32px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
 
+<<<<<<< Updated upstream
 }
 .bienvenida h1 {
   color: #800707;
@@ -109,51 +221,90 @@ header {
   margin-bottom: 32px;
   width: 100%;
 }
+=======
+>>>>>>> Stashed changes
 
 
 
-.contenedordeproductos {
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 2 / 1 / 5 / 2; }
+    .div2 { grid-area: 2 / 5 / 3 / 6; }
+    .div3 { grid-area: 3 / 5 / 5 / 6; }
+    
+
+  
+   
+   
+   
+   .container-slider{
+
+    
+width: 100%;
+max-width: 1000px; /* tamaño maximo que va tomar la imagen  */
+margin: 0 auto  ; 
+overflow: hidden; /*para que no se vean las imagenes de atras */
+box-shadow:0 0 0 1px #000000e5,  /*sombras y marco de las imagenes */
+           0 15px 50px;
+           position: relative; /*botones de los costados */
+           top: 200px ; 
+           
+   
+   }
+
+   .slider{
+display: flex;
+width: 400%; /* mientras más imagenes lo unico que cambiamos es el ancho ej: si hay 5 son 500% etc.*/
+height: 400px;
+margin-left: -100%; /* para que la imagen empiece  desde la segunda hasta la primera  */
+   }
+
+.slider__section{
+    width: 100%;
+
+
 }
-.contenedordeproductos .productos {
-  display: flex; /* Esto lo convierte en FILA a los contenedores que esten dentro*/
-  justify-content: space-between;
-  margin-bottom: 32px;
-}
-.contenedordeproductos .producto {
-  width: 19%; /* cada producto va a medir un 19% del tamano del contenedor */
-  height: 420px; /* la altura de cada producto */
-  background-color: white;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
-  overflow: hidden; /* Esto lo que hace es mantener todo el contenido dentro de producto y que no se salga. */
-  display: flex;
-  flex-direction: column;
-  padding: 12px;
-}
-.contenedordeproductos .producto h1 {
-  font-size: 16px;
-  margin-top: 12px;
-  font-weight: 500;
-  color: #191919;
-}
-.contenedordeproductos .producto h1.precio {
-  color: green;
-  font-size: 24px;
-}
-.contenedordeproductos .producto button {
-  background-color: black;
-  color: white;
-  border: none; /* esto hace que le quita el borde que trae por defecto */
-  border-radius: 12px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin-top: 12px;
-  cursor: pointer;
+.slider__img{
+display: block;
+width:100%;
+height: 100%;
+object-fit: cover;
+
 }
 
+.slider__btn{ /*caracteristicas de los botones, no tocar   */
+position: absolute;
+width: 40px;
+height: 40px;
+background: rgb(255, 255, 255,0.7);
+top: 50%;
+transform: translateY(-50%);
+font-size: 30px;
+font-weight: bold;
+font-family: monospace;
+text-align: center;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.slider__btn:hover{
+background: #ffffffe5;
+}
+.slider__btn--left{
+left: 10px;
+}
+.slider__btn--right{
+right:10px ;
+}
+
+<<<<<<< Updated upstream
 .diferentes-productos {
   background-color:white;
   margin-top: 12px; 
@@ -182,50 +333,130 @@ header {
   text-align: center;
   
 }
+=======
 
-.footer h3 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  text-transform: capitalize;
-  line-height: 3rem;
+>>>>>>> Stashed changes
+
+.contenedor__info {
+    margin-top: 220px;
+    display: flex; 
+    margin-bottom: 32px;
+    padding-left: 180px;
+    
 }
 
+<<<<<<< Updated upstream
 .footer p {
   max-width: 500px;
   margin: 10px auto;
   line-height: 28px;
   font-size: 14px;
   
+=======
+.contenedor1 {
+    width: 25%; 
+    height: 420px; 
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden; 
+    padding: 12px;
+>>>>>>> Stashed changes
 }
 
-.sociales {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0 3rem 0;
+
+.logo {
+    width: 85%;
+    height: 200px;
+    padding-left: 30px;
+    
 }
 
-.sociales li {
-  margin: 0 10px;
+
+.contenedor2 {
+    width: 25%; 
+    height: 220px; 
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden; 
+    padding: 12px;
 }
 
-.sociales a {
-  text-decoration: none;
-  color: #fff;
+.contenedor3 {
+    width: 35%; 
+    height: 320px; 
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden; 
+    padding: 12px;
 }
 
-.sociales a img {
-  font-size: 1.1rem;
-  transition: color .4s ease;
+.img__cont3 {
+    width: 90%;
+    height: auto;
 }
 
-.sociales a:hover img {
-  color:aqua;
-}
 
-.footer-bottom {
-  width: 100%;
-  padding: 20px 0;
-  text-align: center;
-}
+
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #1a1717c2;
+  }
+  
+  .footer h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: #fff;
+  }
+  
+  .footer p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .sociales {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    color: #fff;
+  }
+  
+  .sociales li {
+    margin: 0 10px;
+  }
+  
+  .sociales a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .sociales a img {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+  }
+  
+  .sociales a:hover img {
+    color:aqua;
+  }
+  
+  .footer-bottom {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
