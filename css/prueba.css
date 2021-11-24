@@ -9,12 +9,12 @@
    
     
     .div1 { grid-area: 2 / 1 / 5 / 2;
-height: 100px; /*altura */
+height: 150px; /*altura */
 width: 250px;  /* ancho*/
 margin: auto;
     }
     .div2 { grid-area: 2 / 5 / 3 / 6;
-    margin: 20px;
+    margin: auto;
       
 
  
@@ -82,7 +82,7 @@ left: 10px;
 .slider__btn--right{
 right:10px ;
 }
-/*Pop Up de aca para abajo son los codigos del css */
+/*Pop Up de aca para abajo son los codigos del css 
 label{ 
     text-align: center
 }
@@ -147,7 +147,7 @@ visibility: visible;
 opacity: 1;
 }
 }
-/*aca finaliza */ 
+aca finaliza */ 
 
 
     
