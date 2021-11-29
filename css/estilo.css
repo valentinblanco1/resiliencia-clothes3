@@ -11,18 +11,10 @@ body {
 }
 
 header {
-<<<<<<< Updated upstream
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(20, 20, 14, 0.8); /* */
-  background-size: cover;
-  background-position: center;
-=======
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
->>>>>>> Stashed changes
 }
 
 .menu {
@@ -57,16 +49,9 @@ header {
     --transform: rotate(-90deg);
 }
 
-<<<<<<< Updated upstream
-.logo {  /*cambia las cosas del logo del menu*/ 
-  font-size: 20px;
-  color:rgb(173, 11, 11);
-  font-weight: 100;
-=======
 .menu__item:hover{
     --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     --transform: rotate(0);    
->>>>>>> Stashed changes
 }
 
 .menu__link{
@@ -78,26 +63,6 @@ header {
     align-items: center;
 }
 
-<<<<<<< Updated upstream
-.menu li {
-  list-style: none;
-  margin: 10px ; /* 62,5%*/
-}
-
-.menu li a {
-  color: rgb(12, 6, 6);
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.5s ease;
-}
-
-.menu li a:hover {
-  padding: 5px 10px;
-  background: rgb(21, 9, 37);
-  color: rgb(255, 255, 255);
-  border-radius: 15px;
-}
-=======
 .menu__link:hover{
     background-color: #5e7094;
 }
@@ -119,7 +84,6 @@ header {
     width: max-content;
     transform: translateY(100%);
     background-color: #000;
->>>>>>> Stashed changes
 }
 
 .menu__link--inside{
@@ -213,17 +177,6 @@ header {
     }
 }
 
-<<<<<<< Updated upstream
-}
-.bienvenida h1 {
-  color: #800707;
-  font-size: 42px; /* Esto define el tamano de la fuente de texto */
-  font-weight: 100;
-  margin-bottom: 32px;
-  width: 100%;
-}
-=======
->>>>>>> Stashed changes
 
 
 
@@ -305,38 +258,7 @@ left: 10px;
 right:10px ;
 }
 
-<<<<<<< Updated upstream
-.diferentes-productos {
-  background-color:white;
-  margin-top: 12px; 
-  padding-left: 12px;
-  padding-right: 12px;
-  border-radius: 9px;
-  align-items: center;
-  display: flex;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  justify-content: space-between;
-}
-.diferentes-productos a {
-  text-decoration: none;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif; 
-  padding-left: 12px;
-  padding-right: 12px;
-}
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  
-}
-=======
-
->>>>>>> Stashed changes
 
 .contenedor__info {
     margin-top: 220px;
@@ -346,14 +268,6 @@ right:10px ;
     
 }
 
-<<<<<<< Updated upstream
-.footer p {
-  max-width: 500px;
-  margin: 10px auto;
-  line-height: 28px;
-  font-size: 14px;
-  
-=======
 .contenedor1 {
     width: 25%; 
     height: 420px; 
@@ -362,7 +276,6 @@ right:10px ;
     border-radius: 12px;
     overflow: hidden; 
     padding: 12px;
->>>>>>> Stashed changes
 }
 
 
