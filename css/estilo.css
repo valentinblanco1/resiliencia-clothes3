@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap'); 
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;/*no suma el padding y el border  */
 }
 
 body {
@@ -11,10 +11,10 @@ body {
 }
 
 header {
-    position: fixed;
+    position: fixed; /*para que el menu te siga*/
     top: 0;
     left: 0;
-    z-index: 100;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    z-index: 100; /*para que el menu este por arriba de las eiqutas*/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 }
 
 .menu {
@@ -192,14 +192,8 @@ header {
     .div1 { grid-area: 2 / 1 / 5 / 2; }
     .div2 { grid-area: 2 / 5 / 3 / 6; }
     .div3 { grid-area: 3 / 5 / 5 / 6; }
-    
-
-  
-   
-   
-   
+     
 .container-slider{
-
     
 width: 100%;
 max-width: 1000px; /* tamaño maximo que va tomar la imagen  */
@@ -214,7 +208,7 @@ box-shadow:0 0 0 1px #000000e5,  /*sombras y marco de la caja de las imagenes */
    }
 
    .slider{
-display: flex; /*es para que las imagenes se coloquen una al lado de la otra como tablas y los acomoda*/
+display: flex; /*es para que las imagenes se coloquen una al lado de la otra como tablas y los acomoda, es para que quede sentrado el slider*/
 width: 400%; /* mientras más imagenes lo unico que cambiamos es el ancho ej: si hay 5 son 500% etc.*/
 height: 400px;
 margin-left: -100%; /* para que la imagen empiece  desde la segunda hasta la primera  */

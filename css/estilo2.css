@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 
 .banner {
     background-image: url("../imagenes/fondopantalla.jpg");
@@ -27,7 +27,7 @@
     width: 100%;
   }
   */
-=======
+
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +36,7 @@
 }
 html,
 body {
->>>>>>> Stashed changes
+
   
   display: flex;
   flex-direction: column; /* Esto es para decirle al FLEX que se ponga en modo columna y no en fila */
@@ -282,3 +282,65 @@ body {
     }
 }
  
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: #1a1717c2;
+}
+
+.footer h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize; /*lo unico que hace es que pone la primera letra en mayuscula*/
+  line-height: 3rem;
+  color: #fff;
+}
+
+.footer p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: auto/*28px*/;
+  font-size: 14px;
+  color: #fff;
+}
+
+.sociales {
+  list-style: none; /*para que no tome los efectos que vienen por defecto de las listas*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+  color: #fff;
+}
+
+.sociales li {
+  margin: 0 10px;
+}
+
+.sociales a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sociales a img {
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.sociales a:hover img {
+  color:aqua;
+}
+
+.footer-bottom {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+button{
+  position: absolute;
+  text-align: center;
+}
