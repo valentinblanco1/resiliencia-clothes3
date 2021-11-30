@@ -198,23 +198,23 @@ header {
    
    
    
-   .container-slider{
+.container-slider{
 
     
 width: 100%;
 max-width: 1000px; /* tamaño maximo que va tomar la imagen  */
 margin: 0 auto  ; 
 overflow: hidden; /*para que no se vean las imagenes de atras */
-box-shadow:0 0 0 1px #000000e5,  /*sombras y marco de las imagenes */
+box-shadow:0 0 0 1px #000000e5,  /*sombras y marco de la caja de las imagenes */
            0 15px 50px;
-           position: relative; /*botones de los costados */
-           top: 200px ; 
+           position: relative; /*botones de los costados se usa relative para que queden dentro de la imagen  */
+           top: 200px /*lo use para que se separe del inicio de la pagina*/ ; 
            
    
    }
 
    .slider{
-display: flex;
+display: flex; /*es para que las imagenes se coloquen una al lado de la otra como tablas y los acomoda*/
 width: 400%; /* mientras más imagenes lo unico que cambiamos es el ancho ej: si hay 5 son 500% etc.*/
 height: 400px;
 margin-left: -100%; /* para que la imagen empiece  desde la segunda hasta la primera  */
@@ -226,10 +226,10 @@ margin-left: -100%; /* para que la imagen empiece  desde la segunda hasta la pri
 
 }
 .slider__img{
-display: block;
+display: block; /*toma los div y las etiquetas que esten dentro como bloques */
 width:100%;
 height: 100%;
-object-fit: cover;
+object-fit: cover; /*lo que hace es ajustar la imagen */
 
 }
 
@@ -243,9 +243,9 @@ transform: translateY(-50%);
 font-size: 30px;
 font-weight: bold;
 font-family: monospace;
-text-align: center;
-border-radius: 50%;
-cursor: pointer;
+text-align: center;/*pone el texto en el centro*/
+border-radius: 50%;/*hace que las flechas sean circulos*/
+cursor: pointer;/* hace que el cursor lo tome como un boton y no como que tenga que escribir*/
 }
 
 .slider__btn:hover{
@@ -329,7 +329,7 @@ right:10px ;
   .footer h3 {
     font-size: 1.8rem;
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: capitalize; /*lo unico que hace es que pone la primera letra en mayuscula*/
     line-height: 3rem;
     color: #fff;
   }
@@ -337,13 +337,13 @@ right:10px ;
   .footer p {
     max-width: 500px;
     margin: 10px auto;
-    line-height: 28px;
+    line-height: auto/*28px*/;
     font-size: 14px;
     color: #fff;
   }
   
   .sociales {
-    list-style: none;
+    list-style: none; /*para que no tome los efectos que vienen por defecto de las listas*/
     display: flex;
     align-items: center;
     justify-content: center;
