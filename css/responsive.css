@@ -1,0 +1,73 @@
+
+*{
+    padding: 0%;
+margin: 0%;
+
+}
+
+body{
+    margin: 0;
+    
+   font-family: sans-serif; /*tipo de letras del body*/
+}
+header{
+    background:#07692596; /*fondo del menu*/
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+border-right:1px solid rgb(0, 0, 0) ;/*color del borde derecho del menu*/
+}
+header label:hover{ /*esto va a tomar el logo como un boton y lo va sombrear del color que quieras*/
+    cursor: pointer; /*tomo el cursor como un boton*/
+background: rgba(3, 94, 67, 0.699);
+
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: left;/*con esto se cambia el lugar donde va el menu, center right , etc*/
+}
+.menu li:hover{
+background: rgba(3, 94, 67, 0.699);/*colo que se pone cuando pasamos el maus arriba del menu*/
+
+}
+.menu li a {
+    display: block;
+    padding: 15px 25px;/*separacion de botones del menu*/
+    color: rgba(255, 253, 253, 0.699);
+    text-decoration:none ;
+}
+
+@media (max-width:768px){
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background: rgba(3, 94, 67, 0.699);
+        width: 75%; /*el tamaño que va a tomar cuando apretes el boton desde un celular*/
+        margin: -70%;
+        transition: all 0.4s;/*tiempo que tarda en aparecer*/
+    }
+.menu ul {
+    flex-direction: column;
+
+}
+.menu li {
+    border-top: 1px solid #fff;
+
+}
+#btn-menu:checked ~ .menu  {
+    margin: 0;
+}
+
+
+}
